@@ -1,4 +1,4 @@
-[Tutorial for installing and testing robot framework and selenium library on Linux ]
+[Tutorial for installing and testing robot framework and selenium library on Linux Mint]
 This tutorial is for testing a website automatically using Robot Framework + Selenium Library + Mozilla Firefox
 
 #INSTALLING SYSTEM
