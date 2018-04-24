@@ -23,7 +23,6 @@ Click Login Button
 Search Keywords
 	Input Text	xpath=//*[@id="search-query"]	${Keywords}
 Click Search
-	#Click Element	xpath=/html/body/div[2]/div[1]/div[2]/div/div/div[3]/div/form/span/button
 	Click Element	class=Icon--search
 	Sleep	5
 Exit Browser
