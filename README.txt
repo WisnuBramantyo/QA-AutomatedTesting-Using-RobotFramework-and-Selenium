@@ -1,4 +1,5 @@
 [Tutorial for installing and testing robot framework and selenium library on Linux ]
+This tutorial is for testing a website automatically using Robot Framework + Selenium Library + Mozilla Firefox
 
 #INSTALLING SYSTEM
 => Install Pip
@@ -14,6 +15,7 @@ pip install robotframework-selenium2library
 pip install -U selenium
 
 => Install Geckodriver
+Geckodriver is a web browser engine used in Mozilla Firefox. Gecko Driver is the link between your tests in Selenium and the Firefox browser[1].
 1. Go to the geckodriver releases page. Find the latest version of the driver for your platform and download it : https://github.com/mozilla/geckodriver/releases
 2. Extract the file with: tar -xvzf geckodriver*
 3. Make it executable: chmod +x geckodriver
@@ -29,12 +31,31 @@ Steps :
 You can use, change or improve my test.robot file attached here
 3. Create or copy my test.robot file into web_test_robot folder 
 4. Execute  test.robot file using this command : robot test.robot
-5. Wait.
-6. After the automated testing has finished, check your result which is automatically created by robot framework inside your web_test_robot folder. Open report.html using your browser.
-7. If the test works well, give a reward to yourself or shut your PC down. 
+5. Wait. You can check the automation is running. You can also check on your terminal, if it shows the result like this :
+==============================================================================
+Test                                                                          
+==============================================================================
+Twitter Login Flow                                                                                                                Twitter Login Flow                                                    | PASS |
+------------------------------------------------------------------------------
+Test                                                                  | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  /[YOUR DIRECTORY]/output.xml
+Log:     /[YOUR DIRECTORY]/log.html
+Report:  /[YOUR DIRECTORY]/report.html
 
+Your automated testing is successfully done.
+Look that the documentations have been created automatically by Robotframework : Output, Log, and Report.
+
+6. Open the documentations using your browser.
+7. If the test works well, give a reward to yourself or shut your PC down, or take a moment to view Pevita's tweets. 
+
+That's all guys. Thank you. 
 I'm out.
 
 Important References :
 https://github.com/robotframework/robotframework/blob/master/INSTALL.rst
 http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html
+
+[1] https://www.linkedin.com/pulse/what-geckodriver-amith-wijesiri
